@@ -1,2 +1,2 @@
 ## Quote Generator
-### Generates a random quote from internet and also the local quotes object file
+### Generates a random quote from internet or  the local quotes object file
