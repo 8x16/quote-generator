@@ -11553,4 +11553,12 @@ a.innerHTML = "Click on this link";
 
 console.log(typeFitApiQuotes.length, gitQuotes.length, zenQuotes.length);
 console.log(typeFitApiQuotes.length + gitQuotes.length + zenQuotes.length);
-console.log(zenQuotes[Math.floor(Math.random() * zenQuotes.length)].q);
+const setQuote = document.getElementById('quote');
+const getRandom = Math.floor(Math.random() * zenQuotes.length);
+setQuote.innerText = (zenQuotes[getRandom].q);
+const setAuthor = document.getElementById('author');
+if (zenQuotes[getRandom].a === "Unknown"){
+	setAuthor.innerText = '- A Great Scholar';
+} else {
+	setAuthor.innerText = '- ' + zenQuotes[getRandom].a;
+}
