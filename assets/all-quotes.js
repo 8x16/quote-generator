@@ -11556,7 +11556,7 @@ const getRandom = Math.floor(Math.random() * zenQuotes.length);
 setQuote.innerText = (zenQuotes[getRandom].q);
 const setAuthor = document.getElementById('author');
 if (zenQuotes[getRandom].a === "Unknown"){
-	setAuthor.innerText = '- A Great Scholar';
+	setAuthor.innerText = '- Suhel Ahamad';
 } else {
 	setAuthor.innerText = '- ' + zenQuotes[getRandom].a;
 }
