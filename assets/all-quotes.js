@@ -11551,8 +11551,6 @@ a.href = "data:text/plain;base64," + btoa(JSON.stringify(zenQuotes));
 a.innerHTML = "Click on this link";
  */
 
-console.log(typeFitApiQuotes.length, gitQuotes.length, zenQuotes.length);
-console.log(typeFitApiQuotes.length + gitQuotes.length + zenQuotes.length);
 const setQuote = document.getElementById('quote');
 const getRandom = Math.floor(Math.random() * zenQuotes.length);
 setQuote.innerText = (zenQuotes[getRandom].q);
